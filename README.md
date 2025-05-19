@@ -32,9 +32,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0231-power-of-two](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0231-power-of-two) |
 | [0342-power-of-four](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0342-power-of-four) |
+| [0861-flipping-an-image](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0861-flipping-an-image) |
 ## Array
 |  |
 | ------- |
+| [0861-flipping-an-image](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0861-flipping-an-image) |
 | [0898-transpose-matrix](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0898-transpose-matrix) |
 | [1378-cells-with-odd-values-in-a-matrix](https://github.com/annapareddykeerthireddy/leetcode/tree/master/1378-cells-with-odd-values-in-a-matrix) |
 | [1476-count-negative-numbers-in-a-sorted-matrix](https://github.com/annapareddykeerthireddy/leetcode/tree/master/1476-count-negative-numbers-in-a-sorted-matrix) |
@@ -42,16 +44,22 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0861-flipping-an-image](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0861-flipping-an-image) |
 | [0898-transpose-matrix](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0898-transpose-matrix) |
 | [1476-count-negative-numbers-in-a-sorted-matrix](https://github.com/annapareddykeerthireddy/leetcode/tree/master/1476-count-negative-numbers-in-a-sorted-matrix) |
 | [1677-matrix-diagonal-sum](https://github.com/annapareddykeerthireddy/leetcode/tree/master/1677-matrix-diagonal-sum) |
 ## Simulation
 |  |
 | ------- |
+| [0861-flipping-an-image](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0861-flipping-an-image) |
 | [0898-transpose-matrix](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0898-transpose-matrix) |
 | [1378-cells-with-odd-values-in-a-matrix](https://github.com/annapareddykeerthireddy/leetcode/tree/master/1378-cells-with-odd-values-in-a-matrix) |
 ## Binary Search
 |  |
 | ------- |
 | [1476-count-negative-numbers-in-a-sorted-matrix](https://github.com/annapareddykeerthireddy/leetcode/tree/master/1476-count-negative-numbers-in-a-sorted-matrix) |
+## Two Pointers
+|  |
+| ------- |
+| [0861-flipping-an-image](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0861-flipping-an-image) |
 <!---LeetCode Topics End-->
