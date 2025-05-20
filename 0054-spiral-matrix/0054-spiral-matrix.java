@@ -1,4 +1,4 @@
-import java.util.*;
+ import java.util.*;
 
 class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
@@ -19,13 +19,13 @@ class Solution {
             }
             top++;
 
-            // Traverse from top to bottom
+            
             for (int i = top; i <= bottom; i++) {
                 result.add(matrix[i][right]);
             }
             right--;
 
-            // Traverse from right to left
+            
             if (top <= bottom) {
                 for (int i = right; i >= left; i--) {
                     result.add(matrix[bottom][i]);
@@ -33,7 +33,7 @@ class Solution {
                 bottom--;
             }
 
-            // Traverse from bottom to top
+           
             if (left <= right) {
                 for (int i = bottom; i >= top; i--) {
                     result.add(matrix[i][left]);
