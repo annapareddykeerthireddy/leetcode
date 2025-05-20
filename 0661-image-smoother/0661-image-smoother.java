@@ -20,7 +20,7 @@ class Solution {
                     }
                 }
 
-                result[i][j] = sum / count; // Integer division rounds down
+                result[i][j] = sum / count; 
             }
         }
 
