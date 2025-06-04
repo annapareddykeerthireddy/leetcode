@@ -1,45 +1,75 @@
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int val) { this.val = val; }
+
+    // Helper method to create a linked list from string like "[1,2,3]"
+    public static ListNode deserialize(String data) {
+        data = data.replaceAll("\\[|\\]|\\s", "");
+        if (data.isEmpty()) return null;
+        String[] vals = data.split(",");
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        for (String val : vals) {
+            curr.next = new ListNode(Integer.parseInt(val));
+            curr = curr.next;
+        }
+        return dummy.next;
+    }
+
+    // Helper to print the linked list
+    public static void printList(ListNode head) {
+        while (head != null) {
+            System.out.print(head.val);
+            if (head.next != null) System.out.print("->");
+            head = head.next;
+        }
+        System.out.println();
+    }
+}
+
 public class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
         if (head == null || k == 1) return head;
 
-        // Dummy node before the head to simplify edge cases
         ListNode dummy = new ListNode(0);
         dummy.next = head;
-
-        ListNode prevGroupEnd = dummy;
+        ListNode groupPrev = dummy;
 
         while (true) {
-            // Find the kth node from prevGroupEnd
-            ListNode kth = getKthNode(prevGroupEnd, k);
+            ListNode kth = getKthNode(groupPrev, k);
             if (kth == null) break;
 
-            ListNode groupStart = prevGroupEnd.next;
-            ListNode nextGroupStart = kth.next;
-
-            // Reverse group
+            ListNode groupNext = kth.next;
             ListNode prev = kth.next;
-            ListNode curr = groupStart;
-            while (curr != nextGroupStart) {
+            ListNode curr = groupPrev.next;
+
+            while (curr != groupNext) {
                 ListNode temp = curr.next;
                 curr.next = prev;
                 prev = curr;
                 curr = temp;
             }
 
-            // Connect previous group to reversed group
-            prevGroupEnd.next = kth;
-            prevGroupEnd = groupStart;
+            ListNode temp = groupPrev.next;
+            groupPrev.next = kth;
+            groupPrev = temp;
         }
-
         return dummy.next;
     }
 
-    // Helper to find the kth node from a given node
-    private ListNode getKthNode(ListNode start, int k) {
-        while (start != null && k > 0) {
-            start = start.next;
+    private ListNode getKthNode(ListNode curr, int k) {
+        while (curr != null && k > 0) {
+            curr = curr.next;
             k--;
         }
-        return start;
+        return curr;
+    }
+
+    // Main method for testing
+    public static void main(String[] args) {
+        ListNode head = ListNode.deserialize("[1,2,3,4,5]");
+        Solution sol = new Solution();
+        ListNode result = sol.reverseKGroup(head, 2);
     }
 }
