@@ -120,5 +120,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0232-implement-queue-using-stacks](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0234-palindrome-linked-list) |
+## Design
+|  |
+| ------- |
+| [0232-implement-queue-using-stacks](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0232-implement-queue-using-stacks) |
+## Queue
+|  |
+| ------- |
+| [0232-implement-queue-using-stacks](https://github.com/annapareddykeerthireddy/leetcode/tree/master/0232-implement-queue-using-stacks) |
 <!---LeetCode Topics End-->
